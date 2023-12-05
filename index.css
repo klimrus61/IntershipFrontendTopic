@@ -1,0 +1,28 @@
+/* Main content */
+
+.main-content {
+    padding: 48px 0px;
+}
+
+.main-content > p {
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+
+/* right spy bar */
+
+aside.spybar {
+    padding-top:  3em;
+}
+
+
+/* Correct scrolling to anchor */
+
+.section-content > h2 {
+    scroll-margin-top: 2em;
+}
+
+header > h1 {
+    scroll-margin-top: 2em;
+}

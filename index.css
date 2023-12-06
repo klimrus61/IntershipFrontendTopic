@@ -16,7 +16,9 @@ aside.spybar {
     padding-top:  3em;
 }
 
-
+.sticky {
+    position: fixed;
+}
 /* Correct scrolling to anchor */
 
 .section-content > h2 {

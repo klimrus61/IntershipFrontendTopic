@@ -40,10 +40,13 @@
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
           </li>
-          
         </ul>
+        
       </div>
-      
+      <div class="d-flex justify-content-end">
+        <input class="form-control me-2" type="text" id="search" placeholder="Google search" />
+        <button class="btn btn-primary" onclick="googleSearch();">Search</button>
+      </div>
     </div>
   </nav>
 
@@ -85,7 +88,7 @@
         </aside>
       </div>
 
-      <main class="col-sm-8">
+      <main class="col-sm-8 col-lg-7">
         <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example main-content" tabindex="0">
           
           <section>
@@ -94,19 +97,19 @@
               <div class="mySlides fade">
                 <div class="numbertext">1 / 3</div>
                 <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" style="width:100%">
-                <div class="text">Caption Text</div>
+                <div class="text">Love</div>
               </div>
               
               <div class="mySlides fade">
                 <div class="numbertext">2 / 3</div>
                 <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" style="width:100%">
-                <div class="text">Caption Two</div>
+                <div class="text">Fun</div>
               </div>
               
               <div class="mySlides fade">
                 <div class="numbertext">3 / 3</div>
                 <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" style="width:100%">
-                <div class="text">Caption Three</div>
+                <div class="text">Freedom</div>
               </div>
               
               <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -137,7 +140,7 @@
               Давайте погрузимся в этот веселый мир щекотки и узнаем, почему это так удивительно.
             </p>
           </section>
-          <div>
+          <div class="mt-3 mb-3">
             <img class="img-fluid rounded"
             src="https://www.fosteringdimensions.co.uk/wp-content/uploads/2021/04/front-view-grandpa-reading-grandson-scaled.jpg" 
             alt="happy granpa">
@@ -155,7 +158,7 @@
             </p>
           </section>
   
-          <div>
+          <div class="mt-3 mb-3">
             <img class="img-fluid rounded"
             src="https://thumbs.dreamstime.com/b/grandfather-grandchild-hug-happy-hugging-his-teenage-granddaughter-outdoor-nature-54930123.jpg" 
             alt="happy granpa">
@@ -171,6 +174,12 @@
               Это как эмоциональная волна, которая омывает вас радостью и создает позитивный настрой.
             </p>
           </section>
+
+          <div class="mt-3 mb-3">
+            <img class="img-fluid rounded"
+            src="https://img.freepik.com/free-photo/serious-bearded-ginger-man-and-his-brother-indicate-directly-at-camera-with-index-fingers_273609-18679.jpg?w=2000" 
+            alt="Two man call you">
+          </div>
   
           <section class="section-content">
             <h2 id="list-item-4">
@@ -183,6 +192,12 @@
             </p>
           </section>
   
+          <div class="mt-3 mb-3">
+            <img class="img-fluid rounded"
+            src="https://avatars.dzeninfra.ru/get-zen_doc/3684252/pub_5f17f130637bdd162abc4cb8_5f17f15ec9e3b4094c663fc4/scale_1200" 
+            alt="Two man call you">
+          </div>
+
           <section class="section-content">
             <h2 id="list-item-5">
               Эксперименты с радостью
@@ -194,6 +209,12 @@
             </p>
           </section>
   
+          <div class="mt-3 mb-3">
+            <img class="img-fluid rounded"
+            src="https://avatars.dzeninfra.ru/get-zen_doc/9686459/pub_64427ff72703e827c9071be4_6442805db1638708a5c013ed/scale_1200" 
+            alt="Two man call you">
+          </div>
+
           <section class="section-content">
             <h2 id="list-item-6">
               Вывод
@@ -204,6 +225,7 @@
               Ведь в этом мире нет места для плохого настроения!
             </p>
           </section>
+          
   
           <section class="section-content" style="margin-top: 1000px;">
             <h2 id="gay" >
@@ -289,8 +311,9 @@
     </div>
   </footer>
 
-  <script src="carousel.js"></script>
-    
+  <script src="js/carousel.js"></script>
+  <script src="js/googleSearch.js"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

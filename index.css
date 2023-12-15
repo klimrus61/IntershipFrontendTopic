@@ -9,10 +9,16 @@
     margin-bottom: 32px;
 }
 
+@media (max-width: 576px) { 
+    .sidebar-container {
+        display: none;
+    }
+ }
 
 /* right spy bar */
 
-aside.spybar {
+aside.spybar,
+aside.sidebar {
     padding-top:  3em;
 }
 

@@ -38,6 +38,10 @@ aside.sidebar {
 
 /* Left navibar */
 
+.sidebar-inner-nav {
+    background-color: rgba(78, 123, 235, 0.11);
+
+}
 
 .sidebar-inner-nav > ul {
     padding-left: 1rem;
@@ -45,9 +49,12 @@ aside.sidebar {
 
 .sidebar-inner-nav > ul > p {
     margin-bottom: 0rem;
+    margin-top: 1rem;
 }
 
-
+#sidebar-filter-input {
+    width: 100%;
+}
 
 /* Correct scrolling to anchor */
 

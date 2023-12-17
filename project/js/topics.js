@@ -3,7 +3,7 @@ const topicContainer = document.querySelector(".sidebar-body");
 const createTopic = (topicData) => {
     const { title, articles } = topicData;
     const topic = document.createElement("div")
-    topic.classList.add("sidebar-inner-nav")
+    topic.classList.add("sidebar-inner-nav", "border");
     topic.innerHTML = `
         <ul>
         <p><strong>${title}: </strong></p>

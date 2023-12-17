@@ -34,6 +34,21 @@ aside.sidebar {
 .sticky {
     position: fixed;
 }
+
+
+/* Left navibar */
+
+
+.sidebar-inner-nav > ul {
+    padding-left: 1rem;
+}
+
+.sidebar-inner-nav > ul > p {
+    margin-bottom: 0rem;
+}
+
+
+
 /* Correct scrolling to anchor */
 
 /* .section-content > h2 {

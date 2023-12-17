@@ -15,6 +15,15 @@
     }
  }
 
+/* top navbar */
+
+@media (max-width: 800px) {
+    #googleSearch {
+        display: none !important;
+    }
+}
+
+
 /* right spy bar */
 
 aside.spybar,

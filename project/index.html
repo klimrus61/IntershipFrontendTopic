@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Club of a lovers of tickling your ass</title>
+  <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/carousel.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/index.css">
@@ -35,7 +36,9 @@
             <a class="nav-link" href="#">Руководства</a>
           </li>
           <li class="nav-item align-self-center">
-            <a class="nav-link" href="best_ticklers.html">Лучшие щекотатели</a>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+              Launch demo modal
+            </button>
           </li>
           <li class="nav-item align-self-center">
             <a class="nav-link disabled" href="#">Disabled</a>
@@ -228,6 +231,25 @@
       </main>  
     </div>
 
+
+    <div id="exampleModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p>Modal body text goes here.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
   </div>
 
   <footer>
@@ -295,6 +317,7 @@
   <script src="js/topicsFilter.js"></script>
   <script src="js/carousel.js"></script>
   <script src="js/googleSearch.js"></script>
+  <script src="js/modal.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

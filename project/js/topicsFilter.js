@@ -2,25 +2,25 @@ let sidebarData = "";
 const topicContainer = document.querySelector(".sidebar-body");
 
 const createTopic = (topicData) => {
-    const { title, articles } = topicData;
-    const topic = document.createElement("div")
-    topic.classList.add("sidebar-inner-nav");
-    topic.innerHTML = `
-        <ul>
-        <p><strong>${title}: </strong></p>
+  const { title, articles } = topicData;
+  const topic = document.createElement("div");
+  topic.classList.add("sidebar-inner-nav");
+  topic.innerHTML = `
+      <ul>
+      <p><strong>${title}: </strong></p>
 
-            ${
-                articles.map((article) => {
-                    return `
-                    <li>
-                        ${article}
-                    </li>`
-                })
-                .join("")}
-        </ul>
-    
-    `;
-    topicContainer.append(topic)
+          ${
+              articles.map((article) => {
+                  return `
+                  <li>
+                      ${article}
+                  </li>`
+              })
+              .join("")}
+      </ul>
+  
+  `;
+  topicContainer.append(topic);
 }
 
 
@@ -29,15 +29,13 @@ fetch('js/content/topics.json')
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }
-    return response.json(); // Parse JSON data from the response
+    return response.json();
   })
   .then(data => {
     sidebarData = data
     for (const topic of data) {
         createTopic(topic);
     }
-    console.log(data); // Output the parsed JSON object
-    // Now you can work with the 'data' object as needed
   })
   .catch(error => {
     console.error('Fetch error:', error);
@@ -52,20 +50,16 @@ fetch('js/content/topics.json')
   
   }
   
-
-const filterArticle = document.getElementById("sidebar-filter-input")
+const filterArticle = document.getElementById("sidebar-filter-input");
 
 const inputHandler = function(e) {
-
   const inputText = e.target.value.toLowerCase();
-
-
   topicContainer.innerText = e.target.value;
   if (inputText === "") {
-    resetTopics()
+    resetTopics();
   }
   else {
-      resetTopics()
+      resetTopics();
       for (const topicTitle of topicContainer.getElementsByTagName("p")) {
         if (!topicTitle.innerText.toLowerCase().includes(inputText)) {
           topicTitle.style.display  = "none";

@@ -49,7 +49,7 @@
       </div>
       <div id="googleSearch" class="d-flex justify-content-end">
         <input class="form-control me-2" type="text" id="search" placeholder="Google search" />
-        <button class="btn btn-primary" onclick="googleSearch();">Search</button>
+        <button class="btn btn-primary" onclick="searchInGoogle();">Search</button>
       </div>
     </div>
   </nav>
@@ -115,16 +115,16 @@
                 <div class="text">Freedom</div>
               </div>
               
-              <a class="prev" onclick="plusSlides(-1)">❮</a>
-              <a class="next" onclick="plusSlides(1)">❯</a>
+              <a class="prev" onclick="showNextSlide(-1)">❮</a>
+              <a class="next" onclick="showNextSlide(1)">❯</a>
               
               </div>
               <br>
               
               <div style="text-align:center">
-                <span class="dot" onclick="currentSlide(1)"></span> 
-                <span class="dot" onclick="currentSlide(2)"></span> 
-                <span class="dot" onclick="currentSlide(3)"></span> 
+                <span class="dot" onclick="setCurrentSlide(1)"></span> 
+                <span class="dot" onclick="setCurrentSlide(2)"></span> 
+                <span class="dot" onclick="setCurrentSlide(3)"></span> 
               </div>
 
           </section>
